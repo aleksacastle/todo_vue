@@ -1,0 +1,19 @@
+<h1>To do list</h1>
+
+<div id="todos">
+  <table>
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="employee in employees">
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.email }}</td>
+        <td>{{ employee.manager }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
