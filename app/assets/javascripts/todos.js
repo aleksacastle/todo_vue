@@ -1,3 +1,10 @@
+Vue.component('todo-row', {
+  template: '#todo-row',
+  props: {
+    todo: Object
+  }
+})
+
 var todos = new Vue({
   el: '#todos',
   data: {
