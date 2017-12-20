@@ -14,6 +14,14 @@
         v-for="todo in todos"
         :todo="todo">
       </tr>
+      <tr>
+        <td>
+          <input type="text" v-model="todo.name"><br>
+        </td>
+        <td><input type="checkbox" v-model="todo.status"   true-value="yes"
+  false-value="no"></td>
+        <td><button @click="addTask">Add task</button></td>
+      </tr>
     </tbody>
 
   </table>
@@ -21,6 +29,5 @@
 <script type="text/x-template" id="todo-row">
   <tr>
     <td>{{ todo.name }}</td>
-    <td>{{ todo.status }}</td>
   </tr>
 </script>

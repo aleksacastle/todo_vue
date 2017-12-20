@@ -1,4 +1,4 @@
-var todo = new Vue({
+var todos = new Vue({
   el: '#todos',
   data: {
     todos: [],
@@ -17,5 +17,24 @@ var todo = new Vue({
         that.todos = res;
       }
     });
+  },
+  methods: {
+    addTask: function () {
+      var that = this;
+      $.ajax({
+        method: 'POST',
+        data: {
+          todo: that.todo,
+        },
+        url: '/todos.json',
+        success: function(res) {
+          that.errors = {}
+          that.todos.push(res);
+        },
+        error: function(res) {
+          that.errors = res.responseJSON.errors
+        }
+      })
+    }
   }
 });
