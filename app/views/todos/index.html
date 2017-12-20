@@ -18,6 +18,9 @@
         <td>
           <input type="text" v-model="todo.name"><br>
         </td>
+        <td>
+          <input type="checkbox" v-model="todo.status">
+        </td>
         <td><button @click="addTask">Add task</button></td>
       </tr>
     </tbody>
