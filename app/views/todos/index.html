@@ -4,16 +4,23 @@
   <table>
     <thead>
       <tr>
-        <th>Description</th>
+        <th>TODO</th>
         <th>Status</th>
       </tr>
     </thead>
     <tbody>
-      <tr v-for="employee in employees">
-        <td>{{ employee.name }}</td>
-        <td>{{ employee.email }}</td>
-        <td>{{ employee.manager }}</td>
+      <tr
+        is="todo-row"
+        v-for="todo in todos"
+        :todo="todo">
       </tr>
     </tbody>
+
   </table>
 </div>
+<script type="text/x-template" id="todo-row">
+  <tr>
+    <td>{{ todo.name }}</td>
+    <td>{{ todo.status }}</td>
+  </tr>
+</script>

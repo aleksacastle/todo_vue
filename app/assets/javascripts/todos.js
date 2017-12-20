@@ -1,9 +1,14 @@
 var todo = new Vue({
   el: '#todos',
   data: {
-    todos: []
+    todos: [],
+    todo: {
+      name: '',
+      status: false
+    },
+    errors: {}
   },
-  ready: function() {
+  computed: function() {
     var that;
     that = this;
     $.ajax({
