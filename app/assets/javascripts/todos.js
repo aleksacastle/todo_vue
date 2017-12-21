@@ -4,11 +4,20 @@ Vue.component('todo-row', {
     todo: Object
   },
   methods: {
-    cross: function(id) {
-      // if (id)
-      // console.log(id)
-      $('#'+id).css('text-decoration', 'line-through')
-      console.log($('#'+id))
+
+    change: function(todo) {
+      var id = todo.id
+      var status = todo.status;
+      var completed = false;
+      if (status==0){
+        completed == true;
+        $('#'+id).css('text-decoration', 'line-through')
+      }
+      else {
+        completed == false;
+        $('#'+id).css('text-decoration', 'none')
+      }
+      console.log('change')
     }
   }
 })

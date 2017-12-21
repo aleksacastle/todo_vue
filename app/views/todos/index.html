@@ -31,6 +31,6 @@
 <script type="text/x-template" id="todo-row">
   <tr>
     <td :id="todo.id">{{ todo.name }}</td>
-    <td><input v-on:click="cross(todo.id)" type="checkbox" v-model="todo.status"></td>
+    <td><input v-on:click="change(todo)" type="checkbox" v-model="todo.status"></td>
   </tr>
 </script>
