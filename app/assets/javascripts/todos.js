@@ -2,6 +2,14 @@ Vue.component('todo-row', {
   template: '#todo-row',
   props: {
     todo: Object
+  },
+  methods: {
+    cross: function(id) {
+      // if (id)
+      // console.log(id)
+      $('#'+id).css('text-decoration', 'line-through')
+      console.log($('#'+id))
+    }
   }
 })
 
@@ -15,7 +23,7 @@ var todos = new Vue({
     },
     errors: {}
   },
-  computed: function() {
+  ready: function() {
     var that;
     that = this;
     $.ajax({

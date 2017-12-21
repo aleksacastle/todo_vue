@@ -29,7 +29,7 @@
 </div>
 <script type="text/x-template" id="todo-row">
   <tr>
-    <td>{{ todo.name }}</td>
-    <td><input type="checkbox" v-model="todo.status"></td>
+    <td :id="todo.id">{{ todo.name }}</td>
+    <td><input v-on:click="cross(todo.id)" type="checkbox" v-model="todo.status"></td>
   </tr>
 </script>
