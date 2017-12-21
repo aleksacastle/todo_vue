@@ -8,14 +8,17 @@ Vue.component('todo-row', {
     change: function(todo) {
       var id = todo.id
       var status = todo.status;
-      var completed = false;
+      // var completed = false;
       if (status==0){
-        completed == true;
         $('#'+id).css('text-decoration', 'line-through')
       }
       else {
-        completed == false;
         $('#'+id).css('text-decoration', 'none')
+        // $.ajax({
+        //   method: 'PUT',
+        //   url: '/todos/id.json',
+        //     status == 1;
+        // })
       }
       console.log('change')
     }
