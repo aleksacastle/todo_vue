@@ -4,22 +4,31 @@ Vue.component('todo-row', {
     todo: Object
   },
   methods: {
-
+    //method to change status in database depending on click in box
     change: function(todo) {
-      var id = todo.id
+      // var that = this;
+      var id = todo.id;
       var status = todo.status;
       // var completed = false;
-      if (status==0){
+      //change checkbox and cross out task
+      if (status==1){
         $('#'+id).css('text-decoration', 'line-through')
       }
       else {
         $('#'+id).css('text-decoration', 'none')
-        // $.ajax({
-        //   method: 'PUT',
-        //   url: '/todos/id.json',
-        //     status == 1;
-        // })
       }
+      $.ajax({
+        method: 'PUT',
+        url: '/todos/'+id+'.json',
+        data: {
+          todo: todo
+        },
+        success: function(res) {
+          console.log(res)
+          status = res.status
+          // todo.status=res.status
+        }
+      })
       console.log('change')
     }
   }
