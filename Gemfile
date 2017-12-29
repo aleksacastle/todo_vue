@@ -31,6 +31,7 @@ gem 'sprockets-rails', '~> 3.0', '>= 3.0.4'
 # ember.js
 gem 'ember-rails'
 gem 'ember-data-source', '~> 2.18'
+gem "ember-cli-rails"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
