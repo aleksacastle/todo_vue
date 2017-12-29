@@ -9,4 +9,3 @@
 
 # for more details see: http://emberjs.com/guides/application/
 window.TodoVue = Ember.Application.create()
-
