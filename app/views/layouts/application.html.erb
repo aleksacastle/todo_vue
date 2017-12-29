@@ -6,34 +6,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <!-- <div class="page-header">
-          <h1>Todo list <small>Based on Vue</small></h1> -->
-          <!-- <div class="container" -->
-          <!-- <div class="row">
-            <p><h5>A Todo app built using Vue.js and Rails 4 and PostgreSQL.</h5></p>
-
-            <p><h5>Checkout source on <a href="https://github.com/aleksacastle/todo_vue">Github</a> and the <a href="https://shrouded-caverns-88762.herokuapp.com/">Heroku</a></h5></p>
-          </div>
-          </div> -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
           <div class="panel panel-default">
-
-    <h3 class="panel-title">A Todo app built using Vue.js and Rails 4 and PostgreSQL</h3>
-
-  <div class="panel-body">
-    Checkout source on <a href="https://github.com/aleksacastle/todo_vue">Github</a> and the <a href="https://shrouded-caverns-88762.herokuapp.com/">Heroku</a>
-  </div>
-</div>
-
-          <div class="jumbotron">
-            <%= yield %>
+            <h3 class="panel-title">A Todo app built using Vue.js and Rails 4 and PostgreSQL</h3>
+            <div class="panel-body">
+              Checkout source on <a href="https://github.com/aleksacastle/todo_vue">Github</a> and the <a href="https://shrouded-caverns-88762.herokuapp.com/">Heroku</a>
+            </div>
           </div>
+        <div class="jumbotron">
+          <%= yield %>
         </div>
-
       </div>
-      </nav>
+    </div>
+  </nav>
 
 
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
