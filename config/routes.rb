@@ -7,4 +7,6 @@ Rails.application.routes.draw do
     namespace :ember do
       resources :todos, except: %i[:new :edit]
     end
+
+    mount_ember_app :ember, to: "ember/todos"
 end

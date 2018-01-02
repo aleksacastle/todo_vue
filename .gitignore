@@ -14,3 +14,6 @@
 
 #Ingore database file
 /config/database.yml
+
+#Ignore frontend build
+/frontend
