@@ -202,7 +202,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
-  ember-cli-rails
+  ember-cli-rails (~> 0.10.0)
   ember-data-source
   ember-rails
   jbuilder (~> 2.0)

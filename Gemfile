@@ -27,7 +27,7 @@ gem 'vuejs-rails'
 #ember
 gem 'ember-rails'
 gem 'ember-data-source'
-gem 'ember-cli-rails'
+gem 'ember-cli-rails', '~> 0.10.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
