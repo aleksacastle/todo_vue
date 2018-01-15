@@ -27,6 +27,7 @@ gem 'vuejs-rails'
 # bootstrap
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'sprockets-rails', '~> 3.0', '>= 3.0.4'
+gem 'polymer-rails', github: 'alchaplinsky/polymer-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
