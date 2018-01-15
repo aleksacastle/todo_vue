@@ -27,6 +27,7 @@ gem 'vuejs-rails'
 # bootstrap
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'sprockets-rails', '~> 3.0', '>= 3.0.4'
+gem 'polymer-rails', github: 'alchaplinsky/polymer-rails'
 
 # required for last version (2.0)
 gem 'polymer-rails', github: 'alchaplinsky/polymer-rails'
