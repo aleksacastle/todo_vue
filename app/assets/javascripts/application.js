@@ -15,3 +15,7 @@
 //= require turbolinks
 //= require vue
 //= require_tree .
+//= require polymer/polymer
+//= require px-branding-bar/px-branding-bar.es6
+//= require webcomponentsjs/webcomponents-loader
+//= require webcomponentsjs/webcomponents-lite

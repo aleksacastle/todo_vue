@@ -1,0 +1,21 @@
+{
+  "name": "todo_vue",
+  "homepage": "https://github.com/aleksacastle/todo_vue",
+  "authors": [
+    "aleksacastle <aaklochko@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "px-branding-bar": "^1.1.1"
+  }
+}

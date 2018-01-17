@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TodoVue</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <!-- <title>TodoVue</title> -->
+
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= html_import_tag 'application'%>
   <%= csrf_meta_tags %>
+  <!-- <script src="https://polygit.org/px-*+PredixDev+*/webcomponentsjs+v1.0.22/polymer+v2.3.1/components/"></script> -->
+
+  <!-- <link rel="import" href="px-theme/px-theme-styles.html">
+
+  <custom-style>
+  	<style include="px-theme-styles" is="custom-style"></style>
+  </custom-style> -->
+  <!-- <link rel="import" href="../../bower_components/px-branding-bar/px-branding-bar.html"/> -->
+
+  <!-- <link href="http://polygit.org/components/polymer/polymer.html" rel="import"> -->
+  <!-- <base href="http://polygit.org/polymer+:master/components/"> -->
+  <!-- <link href="../polymer/polymer.html" rel="import"> -->
+<!-- <link href="/home/oklochko/Projects/todo_vue/app/assets/bower_components/polymer/polymer.html" rel="import"> -->
+<!-- <link rel="import" href="px-branding-bar/px-branding-bar.html" > -->
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <div class="panel panel-default">
-            <h3 class="panel-title">A Todo app built using Vue.js and Rails 4 and PostgreSQL</h3>
-            <div class="panel-body">
-              Checkout source on <a href="https://github.com/aleksacastle/todo_vue">Github</a> and the <a href="https://shrouded-caverns-88762.herokuapp.com/">Heroku</a>
-            </div>
-          </div>
-        <div class="jumbotron">
-          <%= yield %>
-        </div>
-      </div>
-    </div>
-  </nav>
+
+  <px-branding-bar application-title="Predix UI">Predix</px-branding-bar>
+  <h3 class="panel-title">A Todo app built using Vue.js and Rails 4 and PostgreSQL</h3>
+  <div class="panel-body">
+    Checkout source on <a href="https://github.com/aleksacastle/todo_vue">Github</a> and the <a href="https://shrouded-caverns-88762.herokuapp.com/">Heroku</a>
+  </div>
+
+  <%= yield %>
 
 
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 </body>
 </html>
