@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/alchaplinsky/polymer-rails.git
+  revision: b6b0940bb8ed70e092b560414ce9d65531f850ed
+  specs:
+    polymer-rails (2.0)
+      nokogiri (~> 1.6)
+      nokogumbo (= 1.4.2)
+      rails (>= 3.1.0)
+      sprockets (~> 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -173,7 +183,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pg (~> 0.15)
-  polymer-rails (~> 1.2, >= 1.2.2)
   rails (= 4.2.9)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
