@@ -1,0 +1,7 @@
+:host {
+  color: $inuit-base-text-color; /* [1] */
+  line-height: $inuit-base-line-height / $inuit-base-font-size; /* [2] */
+  text-size-adjust: 100%; /* [3] */
+  -moz-osx-font-smoothing: grayscale; /* [4] */
+  -webkit-font-smoothing: antialiased; /* [4] */
+}

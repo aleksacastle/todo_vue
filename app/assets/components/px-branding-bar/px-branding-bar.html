@@ -1,0 +1,23 @@
+<dom-module id="px-branding-bar">
+  <template>
+
+    <style include="px-branding-bar-styles"></style>
+    <style include="px-theme"></style>
+
+    <div class="u-ml flex flex--middle">
+      <div class="u-ml-- flex flex--middle">
+        <slot name="logo">
+          <px-ge-svg-logo class="flex flex--middle"></px-ge-svg-logo>
+        </slot>
+      </div>
+      <div class="u-ml-- flex flex--middle">
+        <slot name="title">
+          <label>A Todo app built using Vue.js and Rails 4 and PostgreSQL</label>
+        </slot>
+      </div>
+    </div>
+
+  </template>
+
+  <script src="px-branding-bar.js"></script>
+</dom-module>

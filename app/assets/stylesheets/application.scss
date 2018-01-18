@@ -1,24 +1,39 @@
 @import "bootstrap";
-
-body {
-    font-family: 'Quicksand', sans-serif;
-}
-
-h5, .h5 {
-    font-size: 14px;
-    box-sizing: border-box;
-}
-h4, .h4, h5, .h5, h6, .h6 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1;
-
-}
-
+@import "px-theme";
+@import "_settings.colors.scss";
+@import "_settings.defaults.scss";
+@import "_tools.mixins.scss";
+@import "_base.typography.scss";
+@import "_tools.functions.scss";
+@import "_generic.normalize-mini.scss";
+@import "_generic.box-sizing.scss";
+@import "_generic.helpers.scss";
+@import "_base.flexbox.scss";
+@import "_base.viewport.scss";
+@import "_trumps.spacing-responsive.scss";
+@import "_trumps.spacing.scss";
+@import "_trumps.widths-responsive.scss";
+@import "_tools.widths.scss";
+//
+// body {
+//     font-family: 'Quicksand', sans-serif;
+// }
+//
+// h5, .h5 {
+//     font-size: 14px;
+//     box-sizing: border-box;
+// }
+// h4, .h4, h5, .h5, h6, .h6 {
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+// }
+// h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+//     font-family: inherit;
+//     font-weight: 500;
+//     line-height: 1.1;
+//
+// }
+//
 .panel-default {
   background-color: Thistle;
 }
