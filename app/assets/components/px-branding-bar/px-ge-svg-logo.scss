@@ -1,0 +1,6 @@
+@import "px-normalize-design/_generic.normalize-mini.scss";
+
+// Component
+svg {
+  fill: var(--px-ge-svg-logo-color, gray);
+}
