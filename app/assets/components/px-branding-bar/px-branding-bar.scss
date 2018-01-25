@@ -1,10 +1,3 @@
-@import "px-normalize-design/_generic.normalize-mini.scss";
-@import "px-box-sizing-design/_generic.box-sizing.scss";
-@import "px-helpers-design/_generic.helpers.scss";
-
-// Base
-@import "px-flexbox-design/_base.flexbox.scss";
-@import "px-headings-design/_base.headings.scss";
 
 // Component
 
@@ -13,23 +6,22 @@
   @extend .flex--middle;
   width: inherit;
   justify-content: space-between;
-  height: var(--px-branding-bar-height, calculateRem(30px));
-  max-height: calculateRem(67px);
-  min-height: calculateRem(30px);
+  // height: var(--px-branding-bar-height, calculateRem(30px));
+  // max-height: calculateRem(67px);
+  // min-height: calculateRem(30px);
   background-color: var(--px-branding-bar-background-color, black);
   @include media-query(palm) {
     display: none !important;
     visibility: hidden;
   }
-  font-size: var(--px-branding-bar-font-size, calculateRem(15px));
+  // font-size: var(--px-branding-bar-font-size, calculateRem(15px));
   color: var(--px-branding-bar-logo-and-title-text-color, gray);
 }
 
 .px-branding-bar__powered-by-text{
-  font-size: calculateRem(12px);
+  // font-size: calculateRem(12px);
 }
 
 // Trumps
 $inuit-enable-margins--tiny : true;
 $inuit-enable-margins : true;
-@import "px-spacing-design/_trumps.spacing.scss";

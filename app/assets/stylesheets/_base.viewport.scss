@@ -1,3 +1,15 @@
+////
+/// PX-VIEWPORT-DESIGN
+/// Defines viewport parameters.
+/// @group px-viewport-design
+////
+
+
+/// Set this to the desired width of the "page" element, div.viewport. Will be inserted as the widest breakpoint for the responsive mixin.
+///
+/// @group px-viewport-design:variables:style
+/// @type Number [default] - Viewport width
+/// @todo n/a
 $desk-wide-width    : 100% !default;
 
 /// Set this to the desired value of widest possible viewport width. Will be inserted as the widest breakpoint for the responsive mixin.

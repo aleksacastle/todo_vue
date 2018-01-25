@@ -1,19 +1,51 @@
 @import "bootstrap";
-@import "px-theme";
+// Each project SASS (.scss) of a web application should observe the following import order:
+//Settings – Global variables, site-wide settings, or configuration switches.
+//Tools – Site-wide mixins and functions.
+//Generic – Low-specificity, far-reaching rulesets (such as normalize.css).
+//Base – Unclassed HTML elements (such as block quote {}or address {}).
+//Meta – px-meta-buttons-design and px-meta-lists-design libraries reside here
+//Objects – Objects, abstractions, and design patterns (such as .media {}).
+//Components – Discrete, complete UI chunks (such as .carousel {}). Predix UI does not provide code for this layer, as it is where your SASS code should reside.
+//Trumps – High-specificity, explicit selectors, including overrides and helper classes (such as .hidden {}).
+
+// Settings
 @import "_settings.colors.scss";
 @import "_settings.defaults.scss";
+
+// Tools
 @import "_tools.mixins.scss";
-@import "_base.typography.scss";
 @import "_tools.functions.scss";
+@import "_tools.widths.scss";
+
+// Generic
+@import "_generic.normalize.scss";
 @import "_generic.normalize-mini.scss";
 @import "_generic.box-sizing.scss";
 @import "_generic.helpers.scss";
+
+// Base
+@import "_base.typography.scss";
 @import "_base.flexbox.scss";
 @import "_base.viewport.scss";
-@import "_trumps.spacing-responsive.scss";
+@import "_base.headings.scss";
+
+// Meta
+@import "px-theme.scss";
+@import "px-branding-bar/px-branding-bar.scss";
+
+// Objects
+
+// Component
+
+// Trumps
 @import "_trumps.spacing.scss";
+@import "_trumps.spacing-responsive.scss";
+@import "_trumps.widths.scss";
 @import "_trumps.widths-responsive.scss";
-@import "_tools.widths.scss";
+
+
+
 //
 // body {
 //     font-family: 'Quicksand', sans-serif;

@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require webcomponentsjs/webcomponents-lite
+//= require px-branding-bar/px-branding-bar
 //= require jquery
 //= require jquery_ujs
 //= require vue
