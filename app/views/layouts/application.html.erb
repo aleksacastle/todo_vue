@@ -1,48 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>TodoVue</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <custom-style>
-      <style include="px-theme-styles" is="custom-style"></style>
-    </custom-style>
-<px-branding-bar></px-branding-bar>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-
-            <div class="panel-body">
-              Checkout source on <a href="https://github.com/aleksacastle/todo_vue">Github</a> and the <a href="https://shrouded-caverns-88762.herokuapp.com/">Heroku</a>
+  <html>
+    <head>
+      <title>TodoVue</title>
+      <%= stylesheet_link_tag    'application', media: 'all' %>
+      <%= csrf_meta_tags %>
+    </head>
+    <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <nav-bar></nav-bar>
+              <div class="panel-body">
+                Checkout source on <a href="https://github.com/aleksacastle/todo_vue">Github</a> and the <a href="https://shrouded-caverns-88762.herokuapp.com/">Heroku</a>
+              </div>
+              <div class="jumbotron">
+              <%= yield %>
             </div>
-        <div class="jumbotron">
-          <h1>Polymer Rails Example</h1>
-          <p>Both of this navigations were implemented using <code>.navigation</code> class to apply styles.
-            But web component's CSS and JavaSctipt are fully encapsulated and do not interact in any way with page's styles and JavaScript.</p>
-
-          <label for="">Navigation built in Rails App styled in assets/stylesheets/layout.sass</label>
-          <ul class="navigation">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Contacts</a></li>
-            <li><a href="/">Blog</a></li>
-            <li><a href="/">Twitter</a></li>
-            <li><a href="/">Facebook</a></li>
-          </ul>
-          <br />
-          <label for="">Web Component navigation built with &lt;my-navigation&gt; tag</label>
-          <nav-bar></nav-bar>
-          <%= yield %>
+          </div>
         </div>
-      </div>
-    </div>
-  </nav>
+      </nav>
 
-
-<%= html_import_tag 'application'%>
-<%= javascript_include_tag 'application' %>
-
-
-</body>
+      <%= html_import_tag 'application'%>
+      <%= javascript_include_tag 'application' %>
+    </body>
 </html>
